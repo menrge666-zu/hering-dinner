@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta property="og:title" content="Congratulations, Dr. Yifang Zhu"><meta property="og:description" content="Notes from the Zhu Research Group on the 2026 Susanne V. Hering Award">
+<title>Notes for Dr. Zhu</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&display=swap">
+<style>
+html,body{margin:0}img{max-width:100%}[hidden]{display:none!important}
+/* Layout: letterpress night — gold aerosol hero, then one handwritten-style letter at a time that shatters into gold dust, with fireworks rising behind */
+:root{
+  --ink:#0d1b33; --ink-2:#14264a; --gold:#c9a24d; --gold-soft:#e6cf94; --gold-deep:#a8822f;
+  --paper:#f8f2e4; --paper-2:#efe5cc; --paper-ink:#25324d; --paper-mute:#6f7890; --wax:#7c1f2c;
+  --muted:#8f9ab3;
+  --display:"Cormorant Garamond",Garamond,"Times New Roman",serif;
+  --body:"Jost","Helvetica Neue",Arial,sans-serif;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+body{background:var(--ink);color:var(--paper);font-family:var(--body);font-weight:300;line-height:1.6;overflow-x:hidden;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+#fx{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:1}
+/* fireworks rise over the night-sky banner, but stay behind the letters and buttons */
+.hero{z-index:0}
+.lead,.tabs,.wrap>section,footer{position:relative;z-index:2}
+#dust{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:6}
+.wrap{position:relative;max-width:1080px;margin:0 auto;padding-block:20px 56px}
+/* hero */
+.hero{position:relative;text-align:center;padding-block:60px 52px;border:1px solid rgba(201,162,77,.45);outline:1px solid rgba(201,162,77,.25);outline-offset:6px;margin-top:12px;overflow:hidden;cursor:crosshair;
+  background:radial-gradient(ellipse at 50% 40%,var(--ink-2),var(--ink) 70%)}
+.hero canvas{position:absolute;inset:0;width:100%;height:100%;display:block}
+.hero-in{position:relative;pointer-events:none;display:flex;flex-direction:column;align-items:center;gap:14px;padding-inline:12px}
+.badges{display:flex;gap:10px;font:500 11px/1 var(--body);letter-spacing:.24em;color:var(--gold-soft)}
+.badges span{border:1px solid rgba(201,162,77,.6);padding:7px 10px 6px}
+.eyebrow{font:400 12px/1.4 var(--body);letter-spacing:.32em;text-transform:uppercase;color:var(--gold-soft);margin-top:10px}
+h1{font:italic 400 clamp(46px,8vw,92px)/1 var(--display);margin:0;color:var(--paper);text-wrap:balance}
+.name{font:500 clamp(24px,3.6vw,36px)/1.15 var(--display);letter-spacing:.06em;color:var(--gold-soft);margin:0}
+.rule{width:120px;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent);margin:6px 0}
+.award{font:400 15px/1.5 var(--body);letter-spacing:.06em;max-width:34ch}
+.award small{display:block;color:var(--muted);font-size:12px;letter-spacing:.14em;text-transform:uppercase;margin-top:4px}
+.hint{font:400 11px/1 var(--body);letter-spacing:.2em;text-transform:uppercase;color:var(--muted);margin-top:14px}
+.lead{text-align:center;margin:48px auto 22px;max-width:46ch;font:italic 400 21px/1.45 var(--display);color:var(--gold-soft);text-wrap:balance}
+/* tabs */
+.tabs{display:flex;justify-content:center;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:40px}
+.tabs .sep{width:1px;height:22px;background:rgba(201,162,77,.35);margin:0 8px}
+.tabs button{font:400 12px/1 var(--body);letter-spacing:.18em;text-transform:uppercase;background:none;color:var(--muted);border:1px solid rgba(143,154,179,.35);padding:10px 16px;cursor:pointer;transition:.25s}
+.tabs button[aria-pressed="true"],.tabs button:hover{color:var(--ink);background:var(--gold-soft);border-color:var(--gold-soft)}
+.tabs button:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+/* the letter */
+.stage{max-width:680px;margin:0 auto;position:relative}
+.letter{position:relative;display:flex;flex-direction:column;justify-content:center;color:var(--paper-ink);padding:64px 64px 40px;
+  background:var(--tex,none),radial-gradient(ellipse at 50% 35%,var(--paper),var(--paper-2) 95%);
+  box-shadow:0 1px 0 rgba(255,255,255,.5) inset,0 0 0 1px rgba(168,130,47,.25),0 34px 70px -30px rgba(0,0,0,.95);
+  transition:opacity .7s ease,transform .9s cubic-bezier(.2,.7,.2,1),filter .7s}
+.letter.gone{opacity:0;transform:scale(.985);filter:blur(2px)}
+.letter .frame{position:absolute;inset:14px;border:1px solid rgba(168,130,47,.55);pointer-events:none}
+.letter .frame::after{content:"";position:absolute;inset:4px;border:1px solid rgba(168,130,47,.22)}
+.orn{position:absolute;width:44px;height:44px;color:var(--gold-deep)}
+.orn.tl{top:8px;left:8px}.orn.tr{top:8px;right:8px;transform:scaleX(-1)}
+.orn.bl{bottom:8px;left:8px;transform:scaleY(-1)}.orn.br{bottom:8px;right:8px;transform:scale(-1,-1)}
+.seal{position:absolute;top:-26px;left:50%;width:58px;height:58px;margin-left:-29px;border-radius:50%;
+  background:radial-gradient(circle at 38% 32%,#a83a48,var(--wax) 55%,#4e121b);box-shadow:0 6px 14px -4px rgba(0,0,0,.6),inset 0 0 0 4px rgba(0,0,0,.12);
+  display:grid;place-items:center;font:italic 600 28px/1 var(--display);color:rgba(255,228,200,.85);text-shadow:0 1px 0 rgba(0,0,0,.4)}
+.seal::before{content:"";position:absolute;inset:7px;border-radius:50%;border:1px dashed rgba(255,220,190,.35)}
+.stamp{position:absolute;top:34px;right:36px;width:86px;height:86px;color:var(--gold-deep);opacity:.85;transform:rotate(-12deg)}
+.stamp text{font-family:var(--body);font-size:8.2px;letter-spacing:2.2px;fill:currentColor}
+.stamp .yy{font:italic 600 26px var(--display);letter-spacing:0;text-anchor:middle}
+.dear{font:italic 500 25px/1.2 var(--display);color:var(--gold-deep);margin:0 0 14px;letter-spacing:.01em}
+.letter blockquote{margin:0 0 26px;font:400 clamp(20px,2.4vw,24px)/1.55 var(--display);text-wrap:pretty;padding-right:52px}
+.letter blockquote::first-letter{font-size:1.9em;line-height:.8;float:left;margin:.08em .08em 0 0;color:var(--gold-deep);font-weight:500}
+.w{display:inline-block;white-space:pre;will-change:transform}
+.sign{display:flex;flex-direction:column;align-items:flex-end;gap:2px}
+.sig{font:italic 500 28px/1.15 var(--display);color:var(--paper-ink)}
+.sig::before{content:"— ";color:var(--gold-deep)}
+.role{font:500 11px/1.4 var(--body);letter-spacing:.18em;text-transform:uppercase;color:var(--paper-mute)}
+.in .w{animation:word .9s cubic-bezier(.2,.7,.2,1) both}
+.in .dear,.in .sign,.in .stamp,.in .seal{animation:word 1s cubic-bezier(.2,.7,.2,1) both}
+@keyframes word{from{opacity:0;transform:translateY(.4em);filter:blur(6px)}}
+.meter{max-width:680px;margin:24px auto 0;display:flex;align-items:center;gap:14px;color:var(--muted);font:italic 400 16px/1 var(--display)}
+.meter button{flex:none;width:42px;height:42px;border-radius:50%;background:none;border:1px solid rgba(201,162,77,.5);color:var(--gold-soft);font:400 18px/1 var(--body);cursor:pointer;transition:.25s}
+.meter button:hover{background:var(--gold-soft);color:var(--ink)}
+.meter button:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+/* all at once */
+.grid{columns:3 280px;column-gap:20px}
+.mini{break-inside:avoid;margin:0 0 20px;position:relative;color:var(--paper-ink);padding:34px 30px 22px;
+  background:var(--tex,none),radial-gradient(ellipse at 50% 35%,var(--paper),var(--paper-2) 95%);box-shadow:0 0 0 1px rgba(168,130,47,.25),0 24px 40px -24px rgba(0,0,0,.9);
+  animation:rise .7s cubic-bezier(.2,.7,.2,1) backwards}
+.mini::before{content:"";position:absolute;inset:8px;border:1px solid rgba(168,130,47,.45);pointer-events:none}
+.mini .y{position:absolute;top:16px;right:20px;font:italic 500 24px/1 var(--display);color:rgba(168,130,47,.6)}
+.mini .dear{font-size:19px;margin-bottom:8px}
+.mini p{font:400 17px/1.5 var(--display);margin:0 0 14px}
+.mini .sig{font-size:21px}.mini .sign{gap:0}
+@keyframes rise{from{opacity:0;transform:translateY(18px)}}
+.meter .bar{flex:1;height:1px;background:rgba(201,162,77,.25);position:relative}
+.meter .bar i{position:absolute;left:0;top:0;height:1px;width:0;background:var(--gold-soft);box-shadow:0 0 8px var(--gold)}
+/* afar */
+.afar{margin-top:60px;text-align:center;border-top:1px solid rgba(201,162,77,.3);padding-top:36px}
+.afar h2{font:italic 400 30px/1.2 var(--display);margin:0 0 6px}
+.afar > p{color:var(--muted);margin:0 0 24px;font-size:14px}
+.afar ul{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px}
+.afar li{border:1px solid rgba(201,162,77,.35);padding:16px 14px;display:flex;flex-direction:column;gap:4px;background:rgba(13,27,51,.7)}
+.afar li b{font:500 20px/1.2 var(--display);color:var(--gold-soft)}
+.afar li span{font-size:12px;color:var(--muted);letter-spacing:.04em}
+footer{text-align:center;margin-top:64px;padding-top:36px;border-top:1px solid rgba(201,162,77,.3);font:italic 400 19px/1.5 var(--display);color:var(--gold-soft)}
+footer small{display:block;font:400 11px/1.6 var(--body);letter-spacing:.24em;text-transform:uppercase;color:var(--muted);margin-top:6px;font-style:normal}
+@media (max-width:620px){
+  .tabs{gap:6px}.tabs button{font-size:11px;letter-spacing:.1em;padding:9px 10px}
+  .letter{padding:56px 26px 30px}.letter blockquote{padding-right:0}
+  .stamp{width:64px;height:64px;top:26px;right:22px}.dear{font-size:28px;padding-right:56px}.sig{font-size:34px}
+  .orn{width:34px;height:34px}.hero{padding-block:46px 40px}.lead{font-size:19px}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head><body>
+
+<canvas id="fx" aria-hidden="true"></canvas>
+<canvas id="dust" aria-hidden="true"></canvas>
+<div class="wrap">
+  <header class="hero" id="hero">
+    <canvas id="sky" aria-hidden="true"></canvas>
+    <div class="hero-in">
+      <div class="badges"><span>UCLA</span><span>AAAR</span></div>
+      <div class="eyebrow">The Zhu Research Group</div>
+      <h1>Congratulations</h1>
+      <p class="name">Dr. Yifang Zhu</p>
+      <div class="rule"></div>
+      <div class="award">2026 Susanne V. Hering Award<small>American Association for Aerosol Research</small></div>
+      <div class="hint">Tap the sky to scatter gold</div>
+    </div>
+  </header>
+
+  <p class="lead">Notes from students, postdocs and alumni, in the order we joined the group.</p>
+
+  <div class="tabs" role="group" aria-label="View notes">
+    <button id="k-one" aria-pressed="true" data-k="one">One by one</button>
+    <button id="k-all" aria-pressed="false" data-k="all">All notes</button>
+    <button id="k-alum" aria-pressed="false" data-k="alum">Alumni</button>
+    <button id="k-cur" aria-pressed="false" data-k="cur">Current group</button>
+  </div>
+
+  <section aria-label="Notes of congratulations" aria-live="polite">
+    <div id="oneview"><div class="stage"><article class="letter" id="letter">
+      <span class="frame"></span>
+      <svg class="orn tl" viewBox="0 0 44 44" aria-hidden="true"><path d="M3 41V16C3 8 8 3 16 3h25" fill="none" stroke="currentColor" stroke-width="1.2"/><path d="M9 41V19c0-6 4-10 10-10h22" fill="none" stroke="currentColor" stroke-width=".6"/><path d="M16 3c-1 6 3 9 8 7-4-1-5-4-3-6M3 16c6-1 9 3 7 8-1-4-4-5-6-3" fill="none" stroke="currentColor" stroke-width=".9"/><circle cx="14" cy="14" r="1.8" fill="currentColor"/></svg>
+      <svg class="orn tr" viewBox="0 0 44 44" aria-hidden="true"><path d="M3 41V16C3 8 8 3 16 3h25" fill="none" stroke="currentColor" stroke-width="1.2"/><path d="M9 41V19c0-6 4-10 10-10h22" fill="none" stroke="currentColor" stroke-width=".6"/><path d="M16 3c-1 6 3 9 8 7-4-1-5-4-3-6M3 16c6-1 9 3 7 8-1-4-4-5-6-3" fill="none" stroke="currentColor" stroke-width=".9"/><circle cx="14" cy="14" r="1.8" fill="currentColor"/></svg>
+      <svg class="orn bl" viewBox="0 0 44 44" aria-hidden="true"><path d="M3 41V16C3 8 8 3 16 3h25" fill="none" stroke="currentColor" stroke-width="1.2"/><path d="M9 41V19c0-6 4-10 10-10h22" fill="none" stroke="currentColor" stroke-width=".6"/><path d="M16 3c-1 6 3 9 8 7-4-1-5-4-3-6M3 16c6-1 9 3 7 8-1-4-4-5-6-3" fill="none" stroke="currentColor" stroke-width=".9"/><circle cx="14" cy="14" r="1.8" fill="currentColor"/></svg>
+      <svg class="orn br" viewBox="0 0 44 44" aria-hidden="true"><path d="M3 41V16C3 8 8 3 16 3h25" fill="none" stroke="currentColor" stroke-width="1.2"/><path d="M9 41V19c0-6 4-10 10-10h22" fill="none" stroke="currentColor" stroke-width=".6"/><path d="M16 3c-1 6 3 9 8 7-4-1-5-4-3-6M3 16c6-1 9 3 7 8-1-4-4-5-6-3" fill="none" stroke="currentColor" stroke-width=".9"/><circle cx="14" cy="14" r="1.8" fill="currentColor"/></svg>
+      <div class="seal" aria-hidden="true">Z</div>
+      <svg class="stamp" viewBox="0 0 100 100" aria-hidden="true">
+        <defs><path id="ring" d="M50 50m-37 0a37 37 0 1 1 74 0a37 37 0 1 1-74 0"/></defs>
+        <circle cx="50" cy="50" r="47" fill="none" stroke="currentColor" stroke-width="1.4"/>
+        <circle cx="50" cy="50" r="29" fill="none" stroke="currentColor" stroke-width=".8"/>
+        <text><textPath href="#ring" startOffset="0">ZHU RESEARCH GROUP · JOINED ·</textPath></text>
+        <text class="yy" x="50" y="59" id="stampY"></text>
+      </svg>
+      <p class="dear">Dear Dr. Zhu,</p>
+      <blockquote id="body"></blockquote>
+      <div class="sign"><span class="sig" id="sig"></span><span class="role" id="role"></span></div>
+    </article></div>
+    <div class="meter"><button id="prev" aria-label="Previous note">←</button><span id="count"></span><span class="bar"><i id="bar"></i></span><button id="next" aria-label="Next note">→</button></div></div>
+    <div class="grid" id="grid" hidden></div>
+  </section>
+
+
+  <footer>With gratitude and admiration
+    <small>The Zhu Research Group · Pasadena · October 29, 2026</small>
+  </footer>
+</div>
+
+<script>
+const NOTES=[
+ {n:"Qunfang Zhang",r:"PhD 2007–2012",y:"’07",g:"alum",t:"Heartiest congratulations on receiving the 2026 Susanne V. Hering Award! This is a phenomenal and highly deserved recognition of your incredible contributions to aerosol and air pollution research. Your dedication to groundbreaking research and your unwavering commitment to excellence continue to inspire me and others in this field."},
+ {n:"Eon Lee",r:"PhD 2009–2013 · Postdoc 2013–2017",y:"’09",g:"alum",t:"Congratulations, Yifang!!! I am so glad to hear about this amazing news! I have to miss this event for another family arrangement (it's my birthday), but I hope you enjoy the celebration with current and former members of the team! Happy for you!"},
+ {n:"Charlene Nguyen",r:"Alum · 2015–2022",y:"’15",g:"alum",t:"Congratulations Dr. Zhu on this amazing award! Your knowledge, leadership, and mentorship has always been an inspiration to me. I’m thankful I got to be a part of your research group and having you as my advisor."},
+ {n:"Muchuan Niu",r:"MS → Staff Research Associate → PhD → Postdoc · 2017–present",y:"’17",g:"cur",t:"Congratulations on the Hering Award, so well deserved! Thank you for your guidance and support through these years, at every turning point in my research and career. Your trust and encouragement have meant so much to me, and I have learned so much from you."},
+ {n:"Jonathan Liu",r:"PhD 2019–2023",y:"’19",g:"alum",t:"Congratulations on a well-deserved award, Dr. Zhu! I have very fond memories of my time in your lab; I am very grateful for your mentorship. I am out of town and cannot make it, but am sending my best wishes!"},
+ {n:"Haoxuan Chen",r:"Postdoc · 2021–2026",y:"’21",g:"cur",t:"Congratulations on the Hering Award, Dr. Zhu! Working with you has taught me to look beyond the data and find the key messages and deeper insights, especially what our findings mean for science and public health. I’m grateful for the room you’ve given me to grow as a researcher, and for your guidance along the way. It means a lot to be part of your group and to share in this happy occasion!"},
+ {n:"Yuan Yao",r:"Postdoc · 2022–present",y:"’22",g:"cur",t:"Big congratulations, Dr. Zhu! You put so much heart into your research and into supporting the people around you, and this award is so well deserved! I feel so lucky to have you as my mentor. You’re someone I look up to, both in science and in life."},
+ {n:"Jing Li",r:"Associate Project Scientist · 2022–present",y:"’22",g:"cur",t:"Congratulations, Dr. Zhu! So happy to see you receive this well-deserved recognition. It’s an honor to be part of your team. I’m truly grateful for your mentorship and support, which have helped me grow as an independent researcher, from securing my own CARB-funded project as PI to developing my skills in research project development and management. Wishing you continued success, many more exciting discoveries, and all the best in your continued mentorship of future generations of scientists!"},
+ {n:"Siri Langmo",r:"PhD student · 2024–present",y:"’24",g:"cur",t:"Thank you so much for mentoring me and inspiring me to make a positive impact on the world!"},
+ {n:"Qiyue Nie",r:"PhD student · 2024–present",y:"’24",g:"cur",t:"Warmest congratulations, Professor Zhu, on being honored with the 2026 Susanne V. Hering Award! What a remarkable milestone and a well-deserved recognition of your exceptional achievements and lasting impact at the intersection of air pollution and public health. Your dedication to scientific excellence and unwavering commitment to advancing research for cleaner air have been a tremendous source of inspiration to me. It is truly a privilege to work under your guidance and learn from your example. I look forward to celebrating many more of your achievements and milestones in the years ahead!"},
+ {n:"Katarina Baumgart",r:"Undergraduate research assistant · 2025–present",y:"’25",g:"cur",t:"Congratulations on your award! It is encouraging to see your research recognized. Thank you for your support throughout my time in the lab as well. I am very grateful for the opportunity to contribute to public health research, and I enjoy working with all of our lab members. I look forward to learning more from you and the team."},
+ {n:"Taylor DeRouen",r:"MS student · 2026–present",y:"’26",g:"cur",t:"Congrats Dr. Zhu!! Your hard work and dedication does not go unnoticed amongst those in your lab, and it is wonderful that others can see the importance in your work as well. Here’s to many more awards and honors to come!"},
+ {n:"Levana Gu",r:"Current member",y:"",g:"cur",t:"Congratulations on this incredible achievement! Your passion for science shines through in the research you do. Looking forward to seeing all the wonderful things you’ll continue to attain in the future!"}
+];
+const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+const $=id=>document.getElementById(id);
+const letter=$('letter'),body=$('body'),bar=$('bar'),count=$('count');
+let list=[],pos=0,start=0,dur=0,busy=false;
+
+/* paper grain, drawn once */
+(function(){try{const c=document.createElement('canvas');c.width=c.height=180;const x=c.getContext('2d'),d=x.createImageData(180,180);
+  for(let i=0;i<d.data.length;i+=4){const v=Math.random()*255;d.data[i]=d.data[i+1]=d.data[i+2]=v;d.data[i+3]=Math.random()*16}
+  x.putImageData(d,0,0);letter.style.setProperty('--tex',`url(${c.toDataURL()})`)}catch(e){}})();
+
+function fill(d,anim){
+  body.textContent='';let k=0;
+  d.t.split(/(\s+)/).forEach(w=>{if(!w)return;if(/^\s+$/.test(w)){body.appendChild(document.createTextNode(' '));return}
+    const s=document.createElement('span');s.className='w';s.textContent=w;s.style.animationDelay=(0.35+k++*0.03)+'s';body.appendChild(s)});
+  $('sig').textContent=d.n;$('role').textContent=d.r;$('stampY').textContent=d.y||'now';
+  $('sig').parentNode.style.animationDelay=(0.45+k*0.03)+'s';
+  letter.classList.remove('in');if(anim&&!reduce){void letter.offsetWidth;letter.classList.add('in')}
+}
+function show(anim){const d=NOTES[list[pos]];fill(d,anim);count.textContent=(pos+1)+' / '+list.length;
+  dur=Math.min(15000,4500+d.t.split(/\s+/).length*170);start=performance.now()}
+
+/* shatter: each word breaks off and drifts away as gold dust, then the paper fades */
+function shatter(){
+  letter.classList.remove('in');void letter.offsetWidth;
+  const words=[...body.querySelectorAll('.w'),$('sig'),letter.querySelector('.dear')];
+  words.forEach((w,i)=>{const r=w.getBoundingClientRect();
+    for(let j=0;j<Math.max(2,Math.round(r.width/14));j++)dust(r.left+Math.random()*r.width,r.top+Math.random()*r.height);
+    w.style.transition=`transform 1.1s cubic-bezier(.3,0,.7,1) ${i*0.006}s, opacity .8s ease ${i*0.006}s, filter .8s`;
+    w.style.transform=`translate(${(Math.random()-.3)*120}px,${-40-Math.random()*110}px) rotate(${(Math.random()-.5)*70}deg) scale(${.6+Math.random()*.3})`;
+    w.style.opacity='0';w.style.filter='blur(3px)'});
+  setTimeout(()=>letter.classList.add('gone'),250);
+}
+function reset(){[...body.querySelectorAll('.w'),$('sig'),letter.querySelector('.dear')].forEach(w=>{w.style.transition='none';w.style.transform='';w.style.opacity='';w.style.filter=''})}
+function turn(dir=1){if(busy||mode!=='one')return;const n=(pos+dir+list.length)%list.length;
+  if(reduce){pos=n;show(false);return}
+  busy=true;shatter();
+  setTimeout(()=>{reset();pos=n;show(true);letter.classList.remove('gone');busy=false},1150)}
+let mode='one',cat='all';
+function setFilter(f){cat=f;list=NOTES.map((d,i)=>i).filter(i=>f==='all'||NOTES[i].g===f);pos=0;
+  if(mode==='one'){fit();show(true)}else drawGrid()}
+const grid=$('grid');
+function drawGrid(){grid.textContent='';list.forEach((i,k)=>{const d=NOTES[i],a=document.createElement('article');a.className='mini';
+  a.style.animationDelay=(k*0.07)+'s';a.style.setProperty('--tex',letter.style.getPropertyValue('--tex'));
+  a.innerHTML=(d.y?'<span class="y"></span>':'')+'<p class="dear">Dear Dr. Zhu,</p><p class="t"></p><div class="sign"><span class="sig"></span><span class="role"></span></div>';
+  if(d.y)a.querySelector('.y').textContent=d.y;a.querySelector('.t').textContent=d.t;a.querySelector('.sig').textContent=d.n;a.querySelector('.role').textContent=d.r;
+  grid.appendChild(a)})}
+document.querySelectorAll('[data-k]').forEach(b=>b.onclick=()=>{if(busy)return;const k=b.dataset.k;
+  document.querySelectorAll('[data-k]').forEach(x=>x.setAttribute('aria-pressed',x===b));
+  mode=k==='one'?'one':'grid';$('oneview').hidden=mode!=='one';grid.hidden=mode==='one';setFilter(k==='one'?'all':k)});
+$('prev').onclick=()=>turn(-1);$('next').onclick=()=>turn(1);
+document.addEventListener('keydown',e=>{if(mode!=='one')return;if(e.key==='ArrowRight')turn(1);if(e.key==='ArrowLeft')turn(-1)});
+let tx=null;letter.addEventListener('touchstart',e=>tx=e.touches[0].clientX,{passive:true});
+letter.addEventListener('touchend',e=>{if(tx==null)return;const dx=e.changedTouches[0].clientX-tx;if(Math.abs(dx)>40)turn(dx<0?1:-1);tx=null});
+/* hold the letter at the tallest note in the set so the page does not jump */
+function fit(){letter.style.minHeight='';let h=0;list.forEach(i=>{fill(NOTES[i],false);h=Math.max(h,letter.offsetHeight)});letter.style.minHeight=h+'px'}
+let last=performance.now();
+function tick(now){if(document.hidden||now-last>500)start+=now-last;last=now;
+  if(mode!=='one'){start=now;requestAnimationFrame(tick);return}
+  const p=Math.min(1,(now-start)/dur);bar.style.width=(p*100)+'%';if(p>=1)turn(1);requestAnimationFrame(tick)}
+setFilter('all');requestAnimationFrame(tick);
+let rz;addEventListener('resize',()=>{clearTimeout(rz);rz=setTimeout(()=>{if(!busy){fit();fill(NOTES[list[pos]],false)}},200)});
+document.fonts&&document.fonts.ready.then(()=>{if(!busy){fit();fill(NOTES[list[pos]],false)}});
+
+/* dust overlay used by the shatter */
+const dc=$('dust'),dx=dc.getContext('2d');let D=[],dW,dH,running=false;
+function dsize(){const r=Math.min(2,devicePixelRatio||1);dW=innerWidth;dH=innerHeight;dc.width=dW*r;dc.height=dH*r;dx.setTransform(r,0,0,r,0,0)}
+dsize();addEventListener('resize',dsize);
+function dust(x,y){D.push({x,y,vx:(Math.random()-.35)*1.6,vy:-.4-Math.random()*1.8,l:1,r:.6+Math.random()*1.6,f:.008+Math.random()*.01});
+  if(!running){running=true;requestAnimationFrame(dstep)}}
+function dstep(){dx.clearRect(0,0,dW,dH);
+  for(let i=D.length-1;i>=0;i--){const m=D[i];m.vx+=(Math.random()-.5)*.1;m.vy-=.012;m.x+=m.vx;m.y+=m.vy;m.l-=m.f;
+    if(m.l<=0){D.splice(i,1);continue}
+    dx.beginPath();dx.arc(m.x,m.y,m.r,0,6.283);dx.fillStyle=`rgba(236,206,140,${m.l})`;dx.fill()}
+  if(D.length)requestAnimationFrame(dstep);else{running=false;dx.clearRect(0,0,dW,dH)}}
+
+/* firework engine: a shell climbs on a fading trail, bursts into a gold chrysanthemum, glitters down */
+function Fireworks(ctx,G){const R=[],S=[];G=G||.035;
+  const tones=['240,218,156','226,190,120','250,240,215','214,170,100'];
+  return{
+    launch(x,y0,ty,scale){R.push({x,y:y0,vy:-Math.sqrt(2*G*(y0-ty)),s:scale||1,c:tones[Math.random()*4|0],tr:[]})},
+    burst(x,y,n,pw,c,f){for(let j=0;j<n;j++){const a=j/n*6.283+Math.random()*.15,v=pw*(.7+Math.random()*.4);
+      S.push({x,y,px:x,py:y,vx:Math.cos(a)*v,vy:Math.sin(a)*v,l:1,c:c||tones[Math.random()*4|0],r:.9+Math.random()*1.2,f:f||.006})}},
+    step(){
+      for(let i=R.length-1;i>=0;i--){const k=R[i];k.tr.push([k.x,k.y]);if(k.tr.length>16)k.tr.shift();
+        k.vy+=G;k.y+=k.vy;k.x+=Math.sin(k.y*.03)*.12;
+        for(let t=0;t<k.tr.length;t++){const [x,y]=k.tr[t];ctx.beginPath();ctx.arc(x,y,1.2*t/k.tr.length,0,6.283);ctx.fillStyle=`rgba(${k.c},${.55*t/k.tr.length})`;ctx.fill()}
+        ctx.beginPath();ctx.arc(k.x,k.y,1.8,0,6.283);ctx.fillStyle='rgba(255,246,220,.95)';ctx.fill();
+        if(k.vy>=-0.4){this.burst(k.x,k.y,Math.round(70*k.s),2.5*k.s,k.c,.0055);R.splice(i,1)}}
+      for(let i=S.length-1;i>=0;i--){const s=S[i];s.px=s.x;s.py=s.y;s.vx*=.975;s.vy=s.vy*.975+.018;s.x+=s.vx;s.y+=s.vy;s.l-=s.f;
+        if(s.l<=0){S.splice(i,1);continue}
+        const fl=s.l<.35?(Math.random()<.5?.3:1):1;
+        ctx.strokeStyle=`rgba(${s.c},${s.l*.85*fl})`;ctx.lineWidth=s.r;ctx.lineCap='round';
+        ctx.beginPath();ctx.moveTo(s.px-s.vx*2,s.py-s.vy*2);ctx.lineTo(s.x,s.y);ctx.stroke()}
+    },
+    get busy(){return R.length+S.length>0}
+  }}
+
+/* background behind the letters: a larger shell every 4.5–7.5 s, climbing quicker, from the page edges */
+(function(){if(reduce)return;
+  const c=$('fx'),x=c.getContext('2d'),F=Fireworks(x,.06);let W,H,next=performance.now()+2500;
+  function size(){const r=Math.min(2,devicePixelRatio||1);W=innerWidth;H=innerHeight;c.width=W*r;c.height=H*r;x.setTransform(r,0,0,r,0,0)}
+  size();addEventListener('resize',size);
+  function step(now){
+    if(now>next&&!document.hidden){next=now+3000+Math.random()*2500;
+      /* each shell: its own side, its own height (from high in the sky to mid-page), its own size */
+      const shell=(left)=>{const side=W>900?(left?.03+Math.random()*.13:.84+Math.random()*.13):(.08+Math.random()*.84);
+        const big=W>900?1.05+Math.random()*.7:.75+Math.random()*.45;
+        F.launch(W*side,H+10,H*(.06+Math.pow(Math.random(),1.3)*.48),big)};
+      const left=Math.random()<.5;shell(left);
+      /* about one time in three, a second shell answers from the other side a moment later */
+      if(Math.random()<.35)setTimeout(()=>shell(!left),250+Math.random()*900)}
+    x.clearRect(0,0,W,H);F.step();requestAnimationFrame(step)}
+  requestAnimationFrame(step);
+})();
+
+/* hero: gold aerosol halo; a shell rises on its own every 9–14 s; a tap scatters gold right where you tap */
+(function(){
+  const hero=$('hero'),cv=$('sky'),cx=cv.getContext('2d'),F=Fireworks(cx);
+  let W,H,P=[],S=[],mx=-1e4,my=-1e4,t0=performance.now(),next=t0+1800;
+  function size(){const r=Math.min(2,devicePixelRatio||1);W=hero.clientWidth;H=hero.clientHeight;cv.width=W*r;cv.height=H*r;cx.setTransform(r,0,0,r,0,0)}
+  size();addEventListener('resize',size);
+  const N=innerWidth<600?100:150;
+  for(let i=0;i<N;i++)P.push({a:Math.random()*6.283,k:.72+Math.random()*.34,x:Math.random()*W,y:Math.random()*H,vx:0,vy:0,r:.6+Math.random()*1.6,ph:Math.random()*6.28,sp:(Math.random()<.5?-1:1)*(0.001+Math.random()*0.0013)});
+  hero.addEventListener('pointermove',e=>{const r=hero.getBoundingClientRect();mx=e.clientX-r.left;my=e.clientY-r.top});
+  hero.addEventListener('pointerleave',()=>{mx=my=-1e4});
+  hero.addEventListener('click',e=>{const r=hero.getBoundingClientRect(),x=e.clientX-r.left,y=e.clientY-r.top;
+    for(let i=0;i<46;i++){const a=Math.random()*6.28,v=1+Math.random()*4;S.push({x,y,vx:Math.cos(a)*v,vy:Math.sin(a)*v-1,l:1,r:.8+Math.random()*2})}
+    P.forEach(p=>{const dx=p.x-x,dy=p.y-y,d=Math.hypot(dx,dy)+1;if(d<220){p.vx+=dx/d*5*(1-d/220);p.vy+=dy/d*5*(1-d/220)}});
+    if(reduce)requestAnimationFrame(frame)});
+  function frame(now){
+    const pull=Math.min(1,(now-t0)/2400)*.018+.002;cx.clearRect(0,0,W,H);
+    for(const p of P){p.a+=p.sp;const hx=W/2+Math.cos(p.a)*W*p.k*.46,hy=H/2+Math.sin(p.a)*H*p.k*.44;
+      p.vx+=(hx-p.x)*pull+(Math.random()-.5)*.18;p.vy+=(hy-p.y)*pull+(Math.random()-.5)*.18;
+      const ddx=p.x-mx,ddy=p.y-my,d=Math.hypot(ddx,ddy);if(d<110){p.vx+=ddx/d*.9;p.vy+=ddy/d*.9}
+      p.vx*=.9;p.vy*=.9;p.x+=p.vx;p.y+=p.vy;const tw=.55+.45*Math.sin(now*.0018+p.ph);
+      cx.beginPath();cx.arc(p.x,p.y,p.r,0,6.283);cx.fillStyle=`rgba(230,207,148,${.2+.5*tw})`;cx.fill()}
+    if(!reduce&&now>next&&!document.hidden){next=now+9000+Math.random()*5000;
+      const side=Math.random()<.5?.1+Math.random()*.18:.72+Math.random()*.18;F.launch(W*side,H+6,H*(.16+Math.random()*.2),.8)}
+    F.step();
+    for(let i=S.length-1;i>=0;i--){const s=S[i];s.vx*=.96;s.vy=s.vy*.96+.04;s.x+=s.vx;s.y+=s.vy;s.l-=.012;
+      if(s.l<=0){S.splice(i,1);continue}cx.beginPath();cx.arc(s.x,s.y,s.r,0,6.283);cx.fillStyle=`rgba(240,220,160,${s.l})`;cx.fill()}
+    if(!reduce||S.length)requestAnimationFrame(frame)}
+  if(reduce){t0=-1e5;for(let k=0;k<300;k++)frame(performance.now())}else requestAnimationFrame(frame);
+})();
+</script>
+
+</body></html>
